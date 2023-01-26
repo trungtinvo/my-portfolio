@@ -1,0 +1,49 @@
+#about{
+    padding-top: 7rem;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    line-height: 53px;
+    margin: 0;
+    font-family: 'Coolvetica';
+    font-weight: 900;
+    justify-content: center;
+}
+.about_container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+    position: relative;
+    top:100px;
+
+    @media screen and (max-width: 1000px) {
+        grid-template-columns:auto;
+        text-align: justify;
+    }
+
+    .about_left {
+        max-width: 500px;
+        margin-left:100px;
+        padding-top: 10px;
+            p {
+                font-size: 15px;
+                color: #8d8d8d;
+                font-weight: 300;
+            }
+        @media screen and (max-width: 768px) {
+            margin-left: 4rem;
+        }
+    }
+    .slide-container {
+        width: 400px;
+        height: 280px;
+        justify-content: center;
+        padding-top: 5px;
+        margin-right: 0px;
+                        
+    }
+    
+}

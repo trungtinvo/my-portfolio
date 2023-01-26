@@ -1,0 +1,83 @@
+/* Importing google font  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&display=swap');
+
+#skill{
+    @media screen and (max-width: 1000px) {
+            grid-template-columns: auto;
+            margin-top: 7rem;
+        }
+        padding-top: 7rem ;
+
+}
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    line-height: 53px;
+    margin: 0;
+    font-family: 'Coolvetica';
+    font-weight: 900;
+    justify-content: center;
+}
+.skill_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    position: relative;
+    @media screen and (max-width: 1000px) {
+            grid-template-columns: auto;
+            top: 7rem;
+    }
+    @media screen and (max-width: 768px) {
+        right: 3.5rem;
+    }
+
+    .text-skills {
+        width: 400px;
+        .bar-skills {
+            height: 60px;
+            &:hover {
+                color: #ffff00;
+            }
+            label {
+                justify-content: left;
+            }
+        }
+    }
+
+    .text-shpere {
+        position: relative;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tagcloud {
+        display: inline-block;
+        left: 0;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.0125em;
+        font-size: 1em;
+    }
+
+    /* Change color of each text in sphere on hover   */
+    .tagcloud--item {
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .tagcloud--item:hover {
+        color: #ffff00;
+    }
+
+    
+.progress-bar {
+    text-align: left;
+    padding-left: 50px;
+}
+
+}
