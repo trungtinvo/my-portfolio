@@ -55,7 +55,7 @@ const Navbar = () => {
   const gi = [<FontAwesomeIcon icon={faGithub} className="anchor-icon" />];
   const yu = [<FontAwesomeIcon icon={faYoutube} className="anchor-icon" />];
   const fa = [<FontAwesomeIcon icon={faFacebook} className="anchor-icon" />];
-  const navLinks = ["home", "about", "skills", "Experience", "Contact"];
+  const navLinks = ["home", "about", "skill", "experience", "contact"];
   const listenScrollEvent = () => {
     if (window.scrollY <= 450 && window.scrollY > 0) {
       setScroll(1);

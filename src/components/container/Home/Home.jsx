@@ -55,14 +55,15 @@ const Home = () => {
   return (
     <>
       <div className="container " id="home">
-        <div className="profile">
+        <div className="profile-pic">
           <motion.div
             initial={{ x: 0, opacity: 0 }}
             whileInView={{ x: [-100, 80], opacity: 1 }}
             transition={{ duration: 1 }}
-            className="about_right"
+            className="profile-pic-mov"
           >
             <motion.img
+              className="pic"
               src={portfolio}
               whileHover={{ y: -15, x: 0 }}
               transition={{ duration: 0.5 }}

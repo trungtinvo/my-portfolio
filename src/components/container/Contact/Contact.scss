@@ -1,112 +1,100 @@
 #contact {
+  position: relative;
+  top: 12rem;
+  @media (max-width: 400px) {
     position: relative;
-    top: 12rem;
-    @media screen and (max-width: 991px) {
-        top: 55rem;
-    }
+    top: 58rem;
+  }
+  @media (max-width: 414px) {
+    position: relative;
+    top: 58rem;
+  }
 }
 
 .contact_form {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    background: rgb(200, 210, 166);
-    padding: 2rem;
-    margin: 5rem auto 2rem auto;
-    border-radius: 15px;
-    max-width: 1100px;
-    gap: 2rem;
-    overflow: hidden;
-    
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: rgb(200, 210, 166);
+  padding: 2rem;
+  margin: 5rem auto 2rem auto;
+  border-radius: 15px;
+  max-width: 1100px;
+  gap: 2rem;
+  overflow: hidden;
 
-    .contact_left_container {
-        h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            text-align: center;
-        }
-
-        .map-wrap {
-            width:90%;
-            height: 70%;
-            padding-left: 1rem;
-
-            
-        }
-        .leaflet-container {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            animation: backInRight 1s 1.2s;
-            animation-fill-mode: forwards;
-        }
-        @media screen and (max-width: 991px) {
-
-            display: none;
-        }
-        
+  .contact_left_container {
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
     }
 
-
-    .contact_right {
-        @media screen and (max-width: 991px) {
-            width: 220%;
-        }
-
-        @media (max-width: 767px) {
-            margin-left: 0.5rem;
-        }
-        h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            text-align: center;
-        }
-        .row {
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
-            gap: 0.5rem;
-
-            input {
-                border: none;
-                outline: none;
-                margin-bottom: 0.5rem;
-                padding: 1rem 1.5rem;
-                background:#f3f3f3;
-                border-radius: 5px;
-                font-size: 0.85rem;
-                font-family: "Poppins";
-            }
-            textarea {
-                border: none;
-                outline: none;
-                margin-bottom: 0.5rem;
-                padding: 1rem 1.5rem;
-                background: #f3f3f3;
-                border-radius: 5px;
-                resize: none;
-                min-height: 150px;
-                font-size: 0.85rem;
-                font-family: "Poppins";
-            }
-        }
-
-        .btn {
-            margin-top: 1rem;
-            background: #022c43;
-            padding: 0.65rem 1rem;
-            border-radius: 10px;
-            font-size: 0.85rem;
-            width: 4.2rem;
-            left:3rem;
-            position: relative;
-            left:-1rem;
-        }
-        button {
-            color: #fff;
-            border: none;
-            background: #022c43;
-
-        }
+    .map-wrap {
+      width: 90%;
+      height: 70%;
+      padding-left: 1rem;
     }
+    .leaflet-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      animation: backInRight 1s 1.2s;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  .contact_right {
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .row {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 0.5rem;
+
+      input {
+        border: none;
+        outline: none;
+        margin-bottom: 0.5rem;
+        padding: 1rem 1.5rem;
+        background: #f3f3f3;
+        border-radius: 5px;
+        font-size: 0.85rem;
+        font-family: "Poppins";
+      }
+      textarea {
+        border: none;
+        outline: none;
+        margin-bottom: 0.5rem;
+        padding: 1rem 1.5rem;
+        background: #f3f3f3;
+        border-radius: 5px;
+        resize: none;
+        min-height: 150px;
+        font-size: 0.85rem;
+        font-family: "Poppins";
+      }
+    }
+
+    .btn {
+      margin-top: 1rem;
+      background: #022c43;
+      padding: 0.65rem 1rem;
+      border-radius: 10px;
+      font-size: 0.85rem;
+      width: 4.2rem;
+      left: 3rem;
+      position: relative;
+      left: -1rem;
+    }
+    button {
+      color: #fff;
+      border: none;
+      background: #022c43;
+    }
+  }
 }

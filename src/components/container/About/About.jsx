@@ -27,6 +27,7 @@ const About = () => {
         initial={{ x: 0, opacity: 0 }}
         whileInView={{ x: [150, 0], opacity: 1 }}
         transition={{ duration: 1 }}
+        className="tittle"
       >
         <h1>
           <AnimatedLetters

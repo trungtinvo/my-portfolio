@@ -1,49 +1,65 @@
-#about{
-    padding-top: 7rem;
+#about {
+  padding-top: 7rem;
+  @media screen and (max-width: 414px) {
+    padding-top: 5rem;
+  }
 }
 
-h1 {
-    text-align: center;
-    color: #fff;
-    font-size: 3rem;
-    line-height: 53px;
-    margin: 0;
-    font-family: 'Coolvetica';
-    font-weight: 900;
-    justify-content: center;
-}
 .about_container {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    place-items: center;
-    position: relative;
-    top:100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  position: relative;
+  top: 7rem;
+  @media screen and (max-width: 400px) {
+    grid-template-columns: repeat(1, 1fr);
+    top: 3rem;
+  }
+  @media screen and (max-width: 414px) {
+    grid-template-columns: repeat(1, 1fr);
+    top: 3rem;
+  }
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+    top: 3rem;
+  }
 
-    @media screen and (max-width: 1000px) {
-        grid-template-columns:auto;
-        text-align: justify;
+  .about_left {
+    max-width: 500px;
+    margin-left: 100px;
+    padding-top: 10px;
+    p {
+      font-size: 15px;
+      color: #8d8d8d;
+      font-weight: 300;
     }
-
-    .about_left {
-        max-width: 500px;
-        margin-left:100px;
-        padding-top: 10px;
-            p {
-                font-size: 15px;
-                color: #8d8d8d;
-                font-weight: 300;
-            }
-        @media screen and (max-width: 768px) {
-            margin-left: 4rem;
-        }
+    @media screen and (max-width: 400px) {
+      text-align: justify;
+      width: 80%;
+      margin-left: 4rem;
     }
-    .slide-container {
-        width: 400px;
-        height: 280px;
-        justify-content: center;
-        padding-top: 5px;
-        margin-right: 0px;
-                        
+    @media screen and (max-width: 414px) {
+      text-align: justify;
+      width: 80%;
+      margin-left: 4rem;
     }
-    
+    @media screen and (max-width: 768px) {
+      text-align: justify;
+      width: 80%;
+      margin-left: 4rem;
+    }
+  }
+  .slide-container {
+    max-width: 400px;
+    max-height: 280px;
+    justify-content: center;
+    padding-top: 5px;
+    margin-right: 0px;
+    @media screen and (max-width: 400px) {
+      width: 90%;
+    }
+    @media screen and (max-width: 410px) {
+      width: 90%;
+    }
+  }
 }

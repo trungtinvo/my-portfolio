@@ -138,10 +138,10 @@ function Experience() {
         >
           <img
             src={projImage1}
-            className="proj1-pic proj-pic"
+            className="proj1-pic proj-pic proj-pic-l"
             alt="project-pic"
           ></img>
-          <div className="proj-bg">
+          <div className="proj-bg ">
             <a
               className="proj-icon"
               href="https://github.com/trungtinvo/Project-CSE110-UCSD--Team4-Zooseaker"
@@ -152,7 +152,7 @@ function Experience() {
 
           <img
             src={projImage2}
-            className="proj-bottom-pic proj-pic"
+            className="proj-bottom-pic proj-pic proj-pic-l"
             alt="project-pic"
           ></img>
           <div className="proj-bg proj-bottom-bg ">
