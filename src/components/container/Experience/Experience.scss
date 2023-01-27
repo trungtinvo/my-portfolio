@@ -1,5 +1,8 @@
 #experience {
   padding-top: 3rem;
+  @media screen and (max-width: 400px) {
+    margin-top: 5rem;
+  }
 }
 .time_line {
   top: 5rem;
@@ -7,6 +10,9 @@
   span {
     color: #fff;
   }
+  // @media screen and (max-width: 400px) {
+  //   margin-top: 20rem;
+  // }
 }
 
 .proj_container {
@@ -21,6 +27,9 @@
   @media (max-width: 1199.5px) {
     right: 6rem;
   }
+  // @media screen and (max-width: 400px) {
+  //   margin-bottom: 1rem;
+  // }
 }
 
 .proj-bg {
