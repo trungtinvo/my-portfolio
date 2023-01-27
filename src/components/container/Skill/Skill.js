@@ -21,33 +21,33 @@ const Skill = () => {
     check();
   }, []);
 
-  // Animation settings for Text Cloud
-  const container = ".tagcloud";
-  const texts = [
-    "HTML 5",
-    "CSS 3",
-    "SASS",
-    "JavaScript ES6",
-    "ReactJS",
-    "Java",
-    "C++",
-    "NodeJS",
-    "MongoDB",
-    "Jquery",
-    "MySQL",
-    "GIT",
-    "GITHUB",
-    "Python",
-  ];
-
-  const options = {
-    radius: 300,
-    maxSpeed: "normal",
-    initSpeed: "normal",
-    keep: true,
-  };
   useEffect(() => {
     return () => {
+      // Animation settings for Text Cloud
+      const container = ".tagcloud";
+      const texts = [
+        "HTML 5",
+        "CSS 3",
+        "SASS",
+        "JavaScript ES6",
+        "ReactJS",
+        "Java",
+        "C++",
+        "NodeJS",
+        "MongoDB",
+        "Jquery",
+        "MySQL",
+        "GIT",
+        "GITHUB",
+        "Python",
+      ];
+
+      const options = {
+        radius: 300,
+        maxSpeed: "normal",
+        initSpeed: "normal",
+        keep: true,
+      };
       TagCloud(container, texts, options);
     };
   }, []);
