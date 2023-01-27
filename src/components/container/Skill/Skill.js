@@ -68,7 +68,7 @@ const Skill = () => {
         </h1>
       </motion.div>
       <div className="skill_container">
-        <motion.div
+        {/* <motion.div
           className="text-skills"
           initial={{ x: 0, opacity: 0 }}
           whileInView={{ x: [-150, 0], opacity: 1 }}
@@ -105,7 +105,7 @@ const Skill = () => {
             animated="true"
             now={95}
           />
-        </motion.div>
+        </motion.div> */}
         <div className="text-shpere">
           {/* span tag className must be "tagcloud"  */}
           <span className="tagcloud"></span>
