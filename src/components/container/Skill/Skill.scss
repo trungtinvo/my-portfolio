@@ -78,18 +78,6 @@ h1 {
     }
   }
 
-  /* Change color of each text in sphere on hover   */
-  // .tagcloud--item {
-  //   color: #fff;
-  //   text-transform: uppercase;
-  //   position: relative;
-  //   width: 10%;
-  // }
-
-  // .tagcloud--item:hover {
-  //   color: #ffff00;
-  // }
-
   .progress-bar {
     text-align: left;
     padding-left: 50px;
@@ -104,11 +92,7 @@ h1 {
   font-weight: 600;
   letter-spacing: 0.0625em;
   font-size: 1em;
-  // @media screen and (max-width: 400px) {
-  //   font-size: 0.5em;
-  //   width: 70%;
-  //   margin-left: 2rem;
-  // }
+
   @media screen and (max-width: 414px) {
     font-size: 0.5em;
     width: 70%;
