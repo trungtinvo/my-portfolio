@@ -2,6 +2,7 @@
   "name": "react-starter",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://trungtinvo.github.io/my-portfolio",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
@@ -57,5 +58,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
