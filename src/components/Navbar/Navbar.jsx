@@ -97,7 +97,7 @@ const Navbar = () => {
     >
       <div className="Nav_container">
         <div className="logo">
-          <a href="https://trungtinvo.github.io/my-portfolio/">
+          <a href="/">
             <img className="logo-t" src={Logo} alt="logo-t" />
             <img className="sub-logo" src={Sublogo} alt="sub-logo" />
           </a>
