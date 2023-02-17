@@ -67,3 +67,11 @@ h3 {
     font-size: 0.75rem;
   }
 }
+@media screen and (max-width: 350px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 0.7rem;
+  }
+}
