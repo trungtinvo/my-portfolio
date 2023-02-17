@@ -1,8 +1,5 @@
 #experience {
-  padding-top: 3rem;
-  @media screen and (max-width: 400px) {
-    margin-top: 5rem;
-  }
+  padding-top: 10rem;
 }
 .time_line {
   top: 5rem;
@@ -12,94 +9,26 @@
   }
 }
 
-.proj_container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: 40rem;
-  gap: 5rem;
-  top: 7rem;
-  width: 50rem;
-  place-items: center;
-  position: relative;
-  @media (max-width: 1199.5px) {
-    right: 6rem;
+.project {
+  padding-top: 7rem;
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  color: white;
+  img {
+    width: 100%;
   }
-}
-
-.proj-bg {
-  position: relative;
-  width: 25rem;
-  height: 14.1rem;
-  bottom: 17.1rem;
-  opacity: 0;
-  margin-top: 3rem;
-
-  .proj-icon {
-    position: relative;
-    top: 4.5rem;
-    left: 11rem;
-    font-size: 3rem;
-    color: #000000;
-    &:hover {
-      color: #ffff;
+  figcaption {
+    text-align: center;
+  }
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+    img {
+      width: 50%;
     }
-  }
-  &:hover {
-    background-color: rgb(200, 210, 166);
-    opacity: 0.7;
-  }
-}
-.proj-bg-l {
-  @media (max-width: 400px) {
-    position: relative;
-    right: 1 rem;
-    width: 70%;
-  }
-
-  @media (max-width: 414px) {
-    position: relative;
-    right: 1 rem;
-    width: 70%;
-  }
-}
-
-.proj-bottom-pic {
-  position: relative;
-  bottom: 10rem;
-}
-
-.proj-bottom-bg {
-  bottom: 27.1rem;
-}
-
-.proj_container {
-  .proj-left {
-    height: 40rem;
-    @media (max-width: 400px) {
-      position: relative;
-      right: 1rem;
-      height: 70%;
-      bottom: 7rem;
-    }
-    @media (max-width: 414px) {
-      position: relative;
-      right: 1rem;
-      height: 70%;
-      bottom: 7rem;
-    }
-  }
-
-  .proj-right {
-    height: 40rem;
-    @media (max-width: 414px) {
-      position: relative;
-      right: 34.1rem;
-      top: 35rem;
-    }
-    @media (max-width: 400px) {
-      position: relative;
-      right: 34.1rem;
-      top: 35rem;
-    }
+    gap: 30px;
   }
 }

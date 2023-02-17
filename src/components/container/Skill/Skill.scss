@@ -7,95 +7,42 @@
     padding-top: 10rem;
   }
 }
-h1 {
-  text-align: center;
-  color: #fff;
-  font-size: 3rem;
-  line-height: 53px;
-  margin: 0;
-  font-family: "Coolvetica";
-  font-weight: 900;
-  justify-content: center;
-  @media screen and (max-width: 400px) {
-    font-size: 2rem;
-  }
-  @media screen and (max-width: 414px) {
-    font-size: 2rem;
-  }
-}
+
 .skill_container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  place-items: center;
-  position: relative;
-  margin-top: 7rem;
-  @media screen and (max-width: 400px) {
-    grid-template-columns: repeat(1, 1fr);
-    margin-top: 0rem;
-    margin-left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 50px;
+  text-align: center;
+  padding-top: 5em;
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
   }
-  @media screen and (max-width: 414px) {
-    grid-template-columns: repeat(1, 1fr);
-    margin-top: 0rem;
-    margin-left: 2rem;
-  }
-  @media screen and (max-width: 768px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  @media screen and (max-width: 1000px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .text-skills {
+  .proj-left {
     width: 400px;
     .bar-skills {
       height: 60px;
-      &:hover {
-        color: #ffff00;
+      @media screen and (max-width: 650px) {
+        height: 40px;
       }
       label {
         justify-content: left;
       }
     }
-    @media screen and (max-width: 768px) {
-      position: relative;
-      margin-top: 7rem;
-      margin-right: 9rem;
-      width: 50%;
-    }
-    @media screen and (max-width: 414px) {
-      position: relative;
-      margin-top: 5rem;
-      right: 5rem;
-      width: 50%;
-    }
-    @media screen and (max-width: 820px) {
-      position: relative;
-      margin-left: 9rem;
-      margin-top: 7rem;
-      margin-bottom: 7rem;
+    @media screen and (max-width: 650px) {
+      width: 60%;
     }
   }
+  .proj-right {
+    width: 500px;
+    @media screen and (max-width: 650px) {
+      width: 80%;
 
-  .progress-bar {
-    text-align: left;
-    padding-left: 50px;
-  }
-}
-
-.tagcloud {
-  display: inline-block;
-  top: 0;
-  left: 0;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.0625em;
-  font-size: 1em;
-
-  @media screen and (max-width: 414px) {
-    font-size: 0.5em;
-    width: 70%;
-    margin-left: 2rem;
+      .tagcloud {
+        letter-spacing: 0.0625em;
+        font-size: 0.5em;
+      }
+    }
   }
 }

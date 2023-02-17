@@ -63,9 +63,9 @@ const Navbar = () => {
       setScroll(2);
     } else if (window.scrollY > 900 && window.scrollY <= 1700) {
       setScroll(3);
-    } else if (window.scrollY > 1700 && window.scrollY <= 3500) {
+    } else if (window.scrollY > 1700 && window.scrollY <= 3000) {
       setScroll(4);
-    } else if (window.scrollY > 3500 && window.scrollY <= 5500) {
+    } else if (window.scrollY > 3000 && window.scrollY <= 5500) {
       setScroll(5);
     } else {
       setScroll(0);

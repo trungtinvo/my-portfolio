@@ -127,78 +127,62 @@ function Experience() {
         </h1>
       </motion.div>
 
-      {/* projects container*/}
-      <div className="proj_container">
-        {/* left side projectx */}
-        <motion.div
-          initial={{ x: 0, opacity: 0 }}
-          whileInView={{ x: [-50, 100], opacity: 1 }}
-          transition={{ duration: 1.5 }}
-          className="proj-left"
-        >
-          <img
-            src={projImage1}
-            className="proj1-pic proj-pic proj-pic-l"
-            alt="project-pic"
-          ></img>
-          <div className="proj-bg ">
-            <a
-              className="proj-icon"
-              href="https://github.com/trungtinvo/Project-CSE110-UCSD--Team4-Zooseaker"
-            >
-              {gitIcon}
-            </a>
-          </div>
+      <div class="project">
+        <div class="project1">
+          <h3>Project 1</h3>
+          <figure>
+            <img className="pro-pic" src={projImage1} />
+            <figcaption>
+              <p>Android Mobile App</p>
+            </figcaption>
+          </figure>
+          <details>
+            <summary>Take a Closer Look</summary>
+            <a href="https://github.com/trungtinvo">Github</a>
+          </details>
+        </div>
 
-          <img
-            src={projImage2}
-            className="proj-bottom-pic proj-pic proj-pic-l"
-            alt="project-pic"
-          ></img>
-          <div className="proj-bg proj-bottom-bg ">
-            <a
-              className="proj-icon"
-              href="https://github.com/trungtinvo/Keeper-Project"
-            >
-              {gitIcon}
-            </a>
-          </div>
-        </motion.div>
+        <div class="project2">
+          <h3>Project 2</h3>
+          <figure>
+            <img className="pro-pic" src={projImage2} />
+            <figcaption>
+              <p>React Keeper App</p>
+            </figcaption>
+          </figure>
+          <details>
+            <summary>Take a Closer Look</summary>
+            <a href="https://github.com/trungtinvo">Github</a>
+          </details>
+        </div>
 
-        {/* right side projectx */}
-        <motion.div
-          initial={{ x: 0, opacity: 0 }}
-          whileInView={{ x: [300, 150], opacity: 1 }}
-          transition={{ duration: 1.5 }}
-          className="proj-right"
-        >
-          <img
-            src={projImage3}
-            className="proj3-pic proj-pic"
-            alt="project-pic"
-          ></img>
-          <div className="proj-bg proj3-bg ">
-            <a
-              className="proj-icon"
-              href="https://github.com/trungtinvo/simon-game"
-            >
-              {gitIcon}
-            </a>
-          </div>
-          <img
-            src={projImage4}
-            className="proj-bottom-pic proj-pic"
-            alt="project-pic"
-          ></img>
-          <div className="proj-bg proj-bottom-bg ">
-            <a
-              className="proj-icon"
-              href="https://github.com/trungtinvo/Project-CSE135-UCSD"
-            >
-              {gitIcon}
-            </a>
-          </div>
-        </motion.div>
+        <div class="project3">
+          <h3>Project 3</h3>
+          <figure>
+            <img className="pro-pic" src={projImage3} />
+            <figcaption>
+              <p>Javasript Simon Game</p>
+            </figcaption>
+          </figure>
+          <details>
+            <summary>Take a Closer Look</summary>
+            <a href="https://github.com/trungtinvo">Github</a>
+          </details>
+        </div>
+
+        <div class="project4">
+          <h3>Project 4</h3>
+          <figure>
+            <img className="pro-pic" src={projImage4} />
+            <figcaption>
+              <p>Analytics Website</p>
+            </figcaption>
+          </figure>
+          <details>
+            <summary>Take a Closer Look</summary>
+            <a href="https://github.com/trungtinvo">Github</a>
+          </details>
+        </div>
       </div>
     </div>
   );

@@ -5,37 +5,10 @@ import { motion } from "framer-motion";
 
 import "./Skill.scss";
 
-// Importing TagCloud package
-// import TagCloud from "TagCloud";
 import { TagCloud } from "react-tagcloud";
 
 const Skill = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
-  // // Animation settings for Text Cloud
-  // const container = ".tagcloud";
-  // const texts = [
-  //   "HTML 5",
-  //   "CSS 3",
-  //   "SASS",
-  //   "JavaScript ES6",
-  //   "ReactJS",
-  //   "Java",
-  //   "C++",
-  //   "NodeJS",
-  //   "MongoDB",
-  //   "Jquery",
-  //   "MySQL",
-  //   "GIT",
-  //   "GITHUB",
-  //   "Python",
-  // ];
-
-  // const options = {
-  //   radius: 300,
-  //   maxSpeed: "normal",
-  //   initSpeed: "normal",
-  //   keep: true,
-  // };
 
   const customRenderer = (tag, size, color) => (
     <span
@@ -82,12 +55,6 @@ const Skill = () => {
     check();
   }, []);
 
-  // useEffect(() => {
-  //   return () => {
-  //     TagCloud(container, texts, options);
-  //   };
-  // }, []);
-
   return (
     <div className="container" id="skill">
       <motion.div
@@ -105,7 +72,7 @@ const Skill = () => {
       </motion.div>
       <div className="skill_container">
         <motion.div
-          className="text-skills"
+          className="proj-left"
           initial={{ x: 0, opacity: 0 }}
           whileInView={{ x: [-150, 0], opacity: 1 }}
           transition={{ duration: 1 }}

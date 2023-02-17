@@ -1,10 +1,6 @@
 #contact {
   position: relative;
-  top: 12rem;
-  @media (max-width: 400px) {
-    position: relative;
-    top: 58rem;
-  }
+  top: 7rem;
   @media (max-width: 414px) {
     position: relative;
     top: 58rem;
@@ -23,12 +19,6 @@
   overflow: hidden;
 
   .contact_left_container {
-    h3 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-
     .map-wrap {
       width: 90%;
       height: 70%;
@@ -45,11 +35,6 @@
   }
 
   .contact_right {
-    h3 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
     .row {
       width: 100%;
       display: grid;

@@ -6,10 +6,7 @@ import {
   faTableTennis,
   faHeartMusicCameraBolt,
   faMusic,
-  faGuitar,
   faSoccerBall,
-  faMicrophone,
-  faLaptopCode,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
@@ -28,16 +25,13 @@ const Footer = () => {
         </p>
       </div>
       <div className="right-section">
-        <h4>Happy Coding!!!</h4>
+        <p>Happy Coding!!!</p>
         <div className="stick"></div>
         <div className="enter_icons">
           <FontAwesomeIcon icon={faTableTennis} />
           <FontAwesomeIcon icon={faSoccerBall} />
           <FontAwesomeIcon icon={faHeartMusicCameraBolt} />
           <FontAwesomeIcon icon={faMusic} />
-          <FontAwesomeIcon icon={faGuitar} />
-          <FontAwesomeIcon icon={faMicrophone} />
-          <FontAwesomeIcon icon={faLaptopCode} />
         </div>
       </div>
     </motion.div>
